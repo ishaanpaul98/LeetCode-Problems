@@ -19,17 +19,12 @@ class Solution(object):
             else:
                 pos.add(i)
             
-        print(pos)
         a,b,c = 0,0,0
         for i in pos:
             a = max(a, triplets[i][0])
             b = max(b, triplets[i][1])
             c = max(c, triplets[i][2])
         
-        #print(a)
-        #print(b)
-        #print(c)
-        print(a == target[0] or b == target[1])
         return a == target[0] and b == target[1] and c == target[2]
         
         
